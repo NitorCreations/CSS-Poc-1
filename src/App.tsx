@@ -1,31 +1,14 @@
-<<<<<<< Updated upstream
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-=======
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Formik, Field, Form, FormikHelpers } from "formik";
+import { styled } from "styled-components";
 
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
 interface Values {
   firstName: string;
   lastName: string;
@@ -35,7 +18,7 @@ interface Values {
 function App() {
   return (
     <div>
-      <h1>Signup</h1>
+      <Title>Signup</Title>
       <Formik
         initialValues={{
           firstName: "",
@@ -70,7 +53,6 @@ function App() {
           <button type="submit">Submit</button>
         </Form>
       </Formik>
->>>>>>> Stashed changes
     </div>
   );
 }
