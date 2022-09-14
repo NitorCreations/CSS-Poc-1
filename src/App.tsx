@@ -22,9 +22,12 @@ function App() {
       </header>
 =======
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Formik, Field, Form, FormikHelpers } from "formik";
+<<<<<<< Updated upstream
+=======
+import styled from "styled-components";
+>>>>>>> Stashed changes
 
 interface Values {
   firstName: string;
